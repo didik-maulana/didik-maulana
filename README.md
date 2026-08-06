@@ -36,47 +36,14 @@
   Currently building and experimenting with agentic AI agents alongside full-stack engineering.
 </details>
 
-<h2 align="center">How It Fits Together</h2>
+<h2 align="center" id="didik-tech">Tech Stack</h2>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
-    <img src="./assets/stack-light.svg" alt="Swift and Kotlin clients over a shared React Native and Flutter core, backed by a Node.js API and Postgres" width="100%" />
+    <img src="./assets/stack-light.svg" alt="Mobile, frontend, and backend stacks and how they connect" width="100%" />
   </picture>
-</p>
-
-<h2 align="center" id="didik-tech">Tech Stack</h2>
-
-<p align="center"><strong>Mobile</strong></p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/swift/F05138" height="32" alt="Swift" title="Swift" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/kotlin/7F52FF" height="32" alt="Kotlin" title="Kotlin" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/flutter/02569B/47C5FB" height="32" alt="Flutter" title="Flutter" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/dart/0175C2/40C4FF" height="32" alt="Dart" title="Dart" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/react/61DAFB" height="32" alt="React Native" title="React Native" />
-</p>
-
-<p align="center"><strong>Frontend</strong></p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/typescript/3178C6" height="32" alt="TypeScript" title="TypeScript" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/react/61DAFB" height="32" alt="React" title="React" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/nextdotjs/000000/FFFFFF" height="32" alt="Next.js" title="Next.js" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/astro/BC52EE" height="32" alt="Astro" title="Astro" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/vite/646CFF" height="32" alt="Vite" title="Vite" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="32" alt="Tailwind CSS" title="Tailwind CSS" />
-</p>
-
-<p align="center"><strong>Backend</strong></p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" height="32" alt="Node.js" title="Node.js" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/express/000000/FFFFFF" height="32" alt="Express" title="Express" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/postgresql/4169E1" height="32" alt="PostgreSQL" title="PostgreSQL" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="32" alt="Supabase" title="Supabase" />&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/firebase/DD2C00/FFCA28" height="32" alt="Firebase" title="Firebase" />
 </p>
 
 <h2 align="center">Recent Contributions</h2>
