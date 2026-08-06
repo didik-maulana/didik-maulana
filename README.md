@@ -135,7 +135,11 @@ Mobile is where I go deep. Full-stack is how I finish the job. Seven years acros
     <source media="(prefers-color-scheme: light)" srcset="./metrics/languages.svg" />
     <img src="./metrics/languages.svg" alt="Most used languages" width="420" />
   </picture>
-  <img src="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D&background=00000000&ring=0175C2&fire=F05138&currStreakLabel=7F52FF" alt="Contribution streak" width="49%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D&theme=transparent&ring=0175C2&fire=F05138&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D&theme=transparent&ring=0175C2&fire=F05138&currStreakLabel=0969DA&sideLabels=24292F&currStreakNum=24292F&sideNums=24292F&dates=57606A" />
+    <img src="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="Contribution streak" width="49%" />
+  </picture>
 </p>
 
 <h2 align="left">Recent Activity</h2>
