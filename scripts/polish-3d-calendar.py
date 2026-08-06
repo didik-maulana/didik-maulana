@@ -19,7 +19,9 @@ RING_ANCHOR = '<g transform="translate(40, 520)">'
 FOOTER_ANCHOR = '<g><text style="font-size: 32px; font-weight: bold;"'
 FOOTER_MARK = 'data-polish="footer"'
 PADDING_MARK = 'data-polish="padding"'
-FOOTER_SHIFT = -310
+FOOTER_SHIFT_X = -310
+FOOTER_SHIFT_Y = 28
+DATE_LABEL = re.compile(r'<text[^>]*dominant-baseline="hanging"[^>]*>[^<]*</text>')
 BOTTOM_PADDING = 40
 TAG = re.compile(r"</?g\b")
 
@@ -50,8 +52,14 @@ def shift_footer(markup: str) -> str:
         return markup
 
     start, end = group_bounds(markup, start)
-    wrapper = f'<g {FOOTER_MARK} transform="translate({FOOTER_SHIFT}, 0)">'
-    return markup[:start] + wrapper + markup[start:end] + "</g>" + markup[end:]
+    group = markup[start:end]
+
+    date_label = DATE_LABEL.search(group)
+    kept = DATE_LABEL.sub("", group) if date_label else group
+    trailing = date_label.group() if date_label else ""
+
+    wrapper = f'<g {FOOTER_MARK} transform="translate({FOOTER_SHIFT_X}, {FOOTER_SHIFT_Y})">'
+    return markup[:start] + wrapper + kept + "</g>" + trailing + markup[end:]
 
 
 def add_bottom_padding(markup: str) -> str:
