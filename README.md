@@ -79,6 +79,7 @@
 
 <p align="center">
   <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" height="32" alt="Node.js" title="Node.js" />&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/express/000000/FFFFFF" height="32" alt="Express" title="Express" />&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/postgresql/4169E1" height="32" alt="PostgreSQL" title="PostgreSQL" />&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="32" alt="Supabase" title="Supabase" />&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/firebase/DD2C00/FFCA28" height="32" alt="Firebase" title="Firebase" />
@@ -116,11 +117,11 @@
   </a>
   &nbsp;&nbsp;
   <a href="https://didikmaulana.com">
-    <img alt="Resume" height="36" src="https://img.shields.io/badge/Read%20my%20resume-0175C2?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=161b22" />
+    <img alt="Portfolio" height="36" src="https://img.shields.io/badge/My%20Portfolio-7F52FF?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=161b22" />
   </a>
   &nbsp;&nbsp;
   <a href="https://linkedin.com/in/didik-maulana">
-    <img alt="LinkedIn" height="36" src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=161b22" />
+    <img alt="LinkedIn" height="36" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=161b22" />
   </a>
 </p>
 

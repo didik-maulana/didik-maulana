@@ -14,8 +14,8 @@
     @keyframes flow { to { stroke-dashoffset: -28; } }
   </style>
 
-  <text x="24" y="66" class="lane">CLIENTS</text>
-  <text x="24" y="166" class="lane">SHARED</text>
+  <text x="24" y="66" class="lane">NATIVE PLATFORM</text>
+  <text x="24" y="166" class="lane">CROSS PLATFORM</text>
   <text x="24" y="266" class="lane">SERVICES</text>
   <text x="24" y="366" class="lane">DATA</text>
 
@@ -34,7 +34,7 @@
   <path d="M340 188 L340 240" class="wire core-wire" />
 
   <rect x="210" y="240" width="260" height="44" rx="8" class="node" />
-  <text x="340" y="267" class="label" text-anchor="middle">Node.js API</text>
+  <text x="340" y="267" class="label" text-anchor="middle">Node.js · Express API</text>
 
   <path d="M340 284 C340 312, 210 312, 210 340" class="wire data" />
   <path d="M340 284 L340 340" class="wire data" />
