@@ -31,12 +31,6 @@
 <br clear="right" />
 
 <details>
-  <summary><strong>How I work</strong></summary>
-  <br />
-  Read the crash reports before the roadmap. Write the test that reproduces the bug first. Prefer one upgradeable dependency over four copies of the same component. Leave the codebase easier to change than I found it.
-</details>
-
-<details>
   <summary><strong>Currently learning</strong></summary>
   <br />
   Currently building and experimenting with agentic AI agents alongside full-stack engineering.
