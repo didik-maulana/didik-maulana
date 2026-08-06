@@ -136,14 +136,14 @@ def render(theme_name: str, theme: dict, calendar: dict) -> str:
     ticks = []
     seen_months = set()
     for index, (first_day, total) in enumerate(weeks):
-        height = max(3.0, BAR_MAX * total / peak) if total else 3.0
         x = CHART_X + slot * index
-        fill = theme["bar"] if total else theme["bar_empty"]
-        bars.append(
-            f'  <rect x="{x:.1f}" y="{BAR_BASE - height:.1f}" width="{bar_width:.1f}" '
-            f'height="{height:.1f}" rx="2" fill="{fill}" class="bar" '
-            f'style="animation-delay: {index * 0.018:.3f}s"><title>{first_day}: {total}</title></rect>'
-        )
+        if total:
+            height = max(4.0, BAR_MAX * total / peak)
+            bars.append(
+                f'  <rect x="{x:.1f}" y="{BAR_BASE - height:.1f}" width="{bar_width:.1f}" '
+                f'height="{height:.1f}" rx="2" fill="{theme["bar"]}" class="bar" '
+                f'style="animation-delay: {index * 0.018:.3f}s"><title>{first_day}: {total}</title></rect>'
+            )
 
         month = date.fromisoformat(first_day).strftime("%b")
         if month not in seen_months and index % 4 == 0:
@@ -174,6 +174,7 @@ def render(theme_name: str, theme: dict, calendar: dict) -> str:
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="12" fill="{theme["panel"]}" stroke="{theme["border"]}" />
   <text x="40" y="40" class="title">LAST 12 MONTHS</text>
   <line x1="40" y1="56" x2="{WIDTH - 40}" y2="56" stroke="{theme["border"]}" />
+  <line x1="{CHART_X}" y1="{BAR_BASE + 0.5}" x2="{CHART_X + CHART_WIDTH}" y2="{BAR_BASE + 0.5}" stroke="{theme["border"]}" />
 
 {stats}
 
