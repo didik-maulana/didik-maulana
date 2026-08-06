@@ -8,6 +8,10 @@
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=didik-maulana&label=views&labelColor=0d1117&color=6e7681&style=flat" />
 </p>
 
+<p align="left">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3200&pause=900&color=0175C2&width=520&lines=Native+iOS+and+Android;Flutter+and+React+Native;Node.js%2C+Postgres%2C+and+the+rest+of+it" alt="Native iOS and Android, Flutter and React Native, Node.js and Postgres" />
+</p>
+
 <h3 align="left">Software Engineer building mobile and full-stack products</h3>
 
 <a href="#didik-title">
@@ -25,6 +29,34 @@
 - ✍️ &nbsp;Writing on **[Medium]** and publishing technical work at **[didikmaulana.com]**
 
 <br clear="right" />
+
+<details>
+  <summary><strong>Ask me about</strong></summary>
+  <br />
+  Shipping the same product on iOS and Android without maintaining two of everything. Turning a slow list into a smooth one. Getting releases out without a human clicking through Xcode.
+</details>
+
+<details>
+  <summary><strong>How I work</strong></summary>
+  <br />
+  Read the crash reports before the roadmap. Write the test that reproduces the bug first. Prefer one upgradeable dependency over four copies of the same component. Leave the codebase easier to change than I found it.
+</details>
+
+<details>
+  <summary><strong>Currently learning</strong></summary>
+  <br />
+  Deeper backend work with Node.js and Postgres, and how far a static site can go before it needs a framework runtime.
+</details>
+
+<h2 align="center">How It Fits Together</h2>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
+    <img src="./assets/stack-light.svg" alt="Swift and Kotlin clients over a shared React Native and Flutter core, backed by a Node.js API and Postgres" width="100%" />
+  </picture>
+</p>
 
 <h2 align="center" id="didik-tech">Tech Stack</h2>
 
@@ -70,6 +102,14 @@
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=didik-maulana&theme=github-compact&hide_border=true&area=true" alt="Commits over the last 31 days" width="100%" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
+    <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Contribution calendar rendered in 3D" width="100%" />
+  </picture>
 </p>
 
 <h2 align="center">Get in Touch</h2>
