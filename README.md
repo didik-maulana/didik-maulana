@@ -17,7 +17,9 @@
   </picture>
 </a>
 
-Mobile is where I go deep. Full-stack is how I finish the job. Seven years across native Android, iOS, Flutter, and React Native, shipping fintech, IoT, and marketplace products in Singapore and Indonesia.
+**Mobile is where I go deep. Full-stack is where I go wide.**
+
+Seven years of it, in Singapore and Indonesia, across fintech, IoT, and marketplace products.
 
 ### About Me
 
