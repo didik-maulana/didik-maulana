@@ -79,27 +79,18 @@
 
 ## Featured Projects
 
-<p>
-  <a href="https://github.com/didik-maulana/flutter_intro_layout">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=didik-maulana&repo=flutter_intro_layout&theme=github_dark&hide_border=true" width="49%" alt="flutter_intro_layout" />
-  </a>
-  <a href="https://github.com/didik-maulana/flutter_quotes_apps">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=didik-maulana&repo=flutter_quotes_apps&theme=github_dark&hide_border=true" width="49%" alt="flutter_quotes_apps" />
-  </a>
-</p>
-
-<p>
-  <a href="https://github.com/didik-maulana/find_resto_apps">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=didik-maulana&repo=find_resto_apps&theme=github_dark&hide_border=true" width="49%" alt="find_resto_apps" />
-  </a>
-</p>
+| Project | What it does | Stack | Stars |
+| --- | --- | --- | --- |
+| **[flutter_intro_layout](https://github.com/didik-maulana/flutter_intro_layout)** | Reusable onboarding and intro screens for Flutter apps | Flutter · Dart | ![stars](https://img.shields.io/github/stars/didik-maulana/flutter_intro_layout?style=flat-square&labelColor=1c1c1c&color=02569B) |
+| **[flutter_quotes_apps](https://github.com/didik-maulana/flutter_quotes_apps)** | Fetches API data on background isolates to keep the UI thread free | Flutter · Isolates | ![stars](https://img.shields.io/github/stars/didik-maulana/flutter_quotes_apps?style=flat-square&labelColor=1c1c1c&color=02569B) |
+| **[find_resto_apps](https://github.com/didik-maulana/find_resto_apps)** | Restaurant discovery app with search, detail, and favourites | Flutter · REST API | ![stars](https://img.shields.io/github/stars/didik-maulana/find_resto_apps?style=flat-square&labelColor=1c1c1c&color=02569B) |
 
 ---
 
-## Trophies
+## Achievements
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=didik-maulana&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="trophies" />
+  <img src="./metrics/achievements.svg" width="100%" alt="achievements" />
 </p>
 
 ---
@@ -107,8 +98,8 @@
 ## GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=didik-maulana&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" width="49%" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=didik-maulana&layout=compact&theme=github_dark&hide_border=true&langs_count=8&hide=html,css,scss,makefile" width="49%" alt="top languages" />
+  <img src="./metrics/overview.svg" width="49%" alt="overview" />
+  <img src="./metrics/languages.svg" width="49%" alt="languages" />
 </p>
 
 <p align="center">
