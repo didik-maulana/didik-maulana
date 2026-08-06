@@ -21,6 +21,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      - name: Remove the language ring
+        run: python3 scripts/strip-language-ring.py
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
