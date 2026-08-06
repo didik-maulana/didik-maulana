@@ -1,4 +1,4 @@
-name: Generate 3D Contribution Calendar
+name: Generate Contribution Cards
 
 on:
   schedule:
@@ -24,11 +24,16 @@ jobs:
       - name: Remove the language ring
         run: python3 scripts/strip-language-ring.py
 
+      - name: Build the activity card
+        run: python3 scripts/build-activity-card.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-3d-contrib
-          git diff --staged --quiet || git commit -m "chore: refresh 3d contribution calendar"
+          git add profile-3d-contrib assets
+          git diff --staged --quiet || git commit -m "chore: refresh contribution cards"
           git pull --rebase --autostash origin main
           git push

@@ -44,22 +44,30 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D&theme=transparent&ring=0175C2&fire=F05138&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D&theme=transparent&ring=0175C2&fire=F05138&currStreakLabel=0969DA&sideLabels=24292F&currStreakNum=24292F&sideNums=24292F&dates=57606A" />
-    <img src="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="Contribution streak" width="60%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg" />
+    <img src="./assets/activity-light.svg" alt="Contributions over the last 12 months" width="100%" />
   </picture>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=didik-maulana&theme=github-compact&hide_border=true&area=true" alt="Commits over the last 31 days" width="100%" />
 </p>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
-    <img src="./profile-3d-contrib/profile-green-animate.svg" alt="Contribution calendar rendered in 3D" width="100%" />
+    <img src="./profile-3d-contrib/profile-green-animate.svg" alt="The same 12 months as an isometric calendar" width="100%" />
   </picture>
+</p>
+
+<p align="center">
+  <a href="https://github.com/didik-maulana?tab=repositories">Repositories</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/didik-maulana?tab=overview">Contribution activity</a>
+  &nbsp;·&nbsp;
+  <a href="https://didikmaulana.com">What I ship at work</a>
+</p>
+
+<p align="center">
+  <sub>Day job code lives in private GitLab repositories, so this graph only counts side work.</sub>
 </p>
 
 <h2 align="center">Get in Touch</h2>
