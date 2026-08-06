@@ -31,12 +31,6 @@
 <br clear="right" />
 
 <details>
-  <summary><strong>Ask me about</strong></summary>
-  <br />
-  Shipping the same product on iOS and Android without maintaining two of everything. Turning a slow list into a smooth one. Getting releases out without a human clicking through Xcode.
-</details>
-
-<details>
   <summary><strong>How I work</strong></summary>
   <br />
   Read the crash reports before the roadmap. Write the test that reproduces the bug first. Prefer one upgradeable dependency over four copies of the same component. Leave the codebase easier to change than I found it.
@@ -45,7 +39,7 @@
 <details>
   <summary><strong>Currently learning</strong></summary>
   <br />
-  Deeper backend work with Node.js and Postgres, and how far a static site can go before it needs a framework runtime.
+  Currently building and experimenting with agentic AI agents alongside full-stack engineering.
 </details>
 
 <h2 align="center">How It Fits Together</h2>
