@@ -2,7 +2,7 @@
 
 <p align="left">
   <a href="https://didikmaulana.com"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fdidikmaulana.com&label=didikmaulana.com&labelColor=0d1117&color=0175C2&style=flat" /></a>
-  <a href="https://linkedin.com/in/didik-maulana"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-didik--maulana-0A66C2?logo=linkedin&logoColor=white&labelColor=0d1117&style=flat" /></a>
+  <a href="https://linkedin.com/in/didik-maulana"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-didik--maulana-0A66C2?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZmZmZiI%2BPHBhdGggZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NSAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjh6TTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTN6TTcuMTIgMjAuNDVIMy41NVY5aDMuNTd2MTEuNDV6TTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzJ2MjAuNTZDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43MlYxLjcyQzI0IC43NyAyMy4yIDAgMjIuMjIgMHoiLz48L3N2Zz4%3D&labelColor=0d1117&style=flat" /></a>
   <a href="https://medium.com/@didik.ardiansyah"><img alt="Medium" src="https://img.shields.io/badge/Medium-@didik.ardiansyah-7F52FF?logo=medium&logoColor=white&labelColor=0d1117&style=flat" /></a>
   <a href="https://github.com/didik-maulana?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/didik-maulana?logo=github&logoColor=white&labelColor=0d1117&color=6e7681&style=flat" /></a>
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=didik-maulana&label=views&labelColor=0d1117&color=6e7681&style=flat" />
@@ -29,12 +29,6 @@
 - ✍️ &nbsp;Writing on **[Medium]** and publishing technical work at **[didikmaulana.com]**
 
 <br clear="right" />
-
-<details>
-  <summary><strong>Currently learning</strong></summary>
-  <br />
-  Currently building and experimenting with agentic AI agents alongside full-stack engineering.
-</details>
 
 <h2 align="center" id="didik-tech">Tech Stack</h2>
 
@@ -78,11 +72,11 @@
   </a>
   &nbsp;&nbsp;
   <a href="https://didikmaulana.com">
-    <img alt="Portfolio" height="36" src="https://img.shields.io/badge/My%20Portfolio-7F52FF?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=161b22" />
+    <img alt="Portfolio" height="36" src="https://img.shields.io/badge/My%20Portfolio-7F52FF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8%2BPHBhdGggZD0iTTIgMTJoMjAiLz48cGF0aCBkPSJNMTIgMmExNS4zIDE1LjMgMCAwIDEgNCAxMCAxNS4zIDE1LjMgMCAwIDEtNCAxMCAxNS4zIDE1LjMgMCAwIDEtNC0xMEExNS4zIDE1LjMgMCAwIDEgMTIgMnoiLz48L3N2Zz4%3D&labelColor=161b22" />
   </a>
   &nbsp;&nbsp;
   <a href="https://linkedin.com/in/didik-maulana">
-    <img alt="LinkedIn" height="36" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=161b22" />
+    <img alt="LinkedIn" height="36" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZmZmZiI%2BPHBhdGggZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NSAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjh6TTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTN6TTcuMTIgMjAuNDVIMy41NVY5aDMuNTd2MTEuNDV6TTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzJ2MjAuNTZDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43MlYxLjcyQzI0IC43NyAyMy4yIDAgMjIuMjIgMHoiLz48L3N2Zz4%3D&labelColor=161b22" />
   </a>
 </p>
 
