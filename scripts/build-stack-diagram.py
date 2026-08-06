@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Render assets/stack-{light,dark}.svg.
 
-Simple Icons paths are inlined rather than linked: an SVG loaded through an
-<img> tag runs in secure static mode, so any external reference it holds is
-dropped and the icons would render blank.
+Icons are inlined rather than linked: an SVG loaded through an <img> tag runs
+in secure static mode, so any external reference it holds is dropped and the
+icons would render blank.
+
+Devicon supplies the full-colour marks. Their gradients all declare id="a", so
+every icon gets its ids namespaced before being nested, otherwise the last
+definition wins and earlier icons render with the wrong fill. Marks that are
+black in Devicon come from Simple Icons instead, coloured per theme, so they
+stay visible on both backgrounds.
 """
 
 import re
@@ -11,59 +17,56 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-ICON_URL = "https://cdn.simpleicons.org/{slug}"
+DEVICON_URL = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{path}.svg"
+SIMPLE_URL = "https://cdn.simpleicons.org/{slug}/{color}"
 
 GROUPS = [
     {
-        "id": "mobile",
         "title": "MOBILE",
         "x": 30,
         "y": 40,
         "width": 440,
         "items": [
-            ("swift", "Swift", "#F05138", "#F05138"),
-            ("kotlin", "Kotlin", "#7F52FF", "#A371F7"),
-            ("flutter", "Flutter", "#02569B", "#47C5FB"),
-            ("dart", "Dart", "#0175C2", "#40C4FF"),
-            ("react", "React Native", "#149ECA", "#61DAFB"),
+            ("Swift", {"devicon": "swift/swift-original"}),
+            ("Kotlin", {"devicon": "kotlin/kotlin-original"}),
+            ("Flutter", {"devicon": "flutter/flutter-original"}),
+            ("Dart", {"devicon": "dart/dart-original"}),
+            ("React Native", {"devicon": "react/react-original"}),
         ],
     },
     {
-        "id": "frontend",
         "title": "FRONTEND",
         "x": 510,
         "y": 40,
         "width": 420,
         "items": [
-            ("typescript", "TypeScript", "#3178C6", "#3178C6"),
-            ("react", "React", "#149ECA", "#61DAFB"),
-            ("nextdotjs", "Next.js", "#000000", "#FFFFFF"),
-            ("astro", "Astro", "#BC52EE", "#BC52EE"),
-            ("vite", "Vite", "#646CFF", "#8B8FFF"),
-            ("tailwindcss", "Tailwind", "#06B6D4", "#38BDF8"),
+            ("TypeScript", {"devicon": "typescript/typescript-original"}),
+            ("React", {"devicon": "react/react-original"}),
+            ("Next.js", {"simple": "nextdotjs", "light": "000000", "dark": "FFFFFF"}),
+            ("Astro", {"simple": "astro", "light": "BC52EE", "dark": "C58AF9"}),
+            ("Vite", {"devicon": "vitejs/vitejs-original"}),
+            ("Tailwind", {"devicon": "tailwindcss/tailwindcss-original"}),
         ],
     },
     {
-        "id": "backend",
         "title": "BACKEND",
         "x": 340,
         "y": 280,
         "width": 280,
         "items": [
-            ("nodedotjs", "Node.js", "#5FA04E", "#7EE787"),
-            ("express", "Express.js", "#000000", "#FFFFFF"),
+            ("Node.js", {"devicon": "nodejs/nodejs-original"}),
+            ("Express.js", {"simple": "express", "light": "000000", "dark": "FFFFFF"}),
         ],
     },
     {
-        "id": "database",
         "title": "DATABASE",
         "x": 270,
         "y": 470,
         "width": 420,
         "items": [
-            ("postgresql", "Postgres", "#4169E1", "#79C0FF"),
-            ("supabase", "Supabase", "#3FCF8E", "#3FCF8E"),
-            ("firebase", "Firebase", "#DD2C00", "#FFCA28"),
+            ("Postgres", {"devicon": "postgresql/postgresql-original"}),
+            ("Supabase", {"devicon": "supabase/supabase-original"}),
+            ("Firebase", {"devicon": "firebase/firebase-plain"}),
         ],
     },
 ]
@@ -77,7 +80,6 @@ THEMES = {
         "wire_mobile": "#F05138",
         "wire_frontend": "#3178C6",
         "wire_data": "#4169E1",
-        "color_index": 2,
     },
     "dark": {
         "text": "#e6edf3",
@@ -87,7 +89,6 @@ THEMES = {
         "wire_mobile": "#F05138",
         "wire_frontend": "#58A6FF",
         "wire_data": "#79C0FF",
-        "color_index": 3,
     },
 }
 
@@ -95,19 +96,43 @@ PANEL_HEIGHT = 150
 ICON_SIZE = 34
 
 
-def fetch_path(slug: str) -> str:
-    request = urllib.request.Request(
-        ICON_URL.format(slug=slug), headers={"User-Agent": "curl/8"}
-    )
+def fetch(url: str) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "curl/8"})
     with urllib.request.urlopen(request) as response:
-        markup = response.read().decode()
-    match = re.search(r'\sd="([^"]+)"', markup)
-    if not match:
-        raise RuntimeError(f"no path found for {slug}")
-    return match.group(1)
+        return response.read().decode()
 
 
-def panel(group: dict, theme: dict, paths: dict) -> str:
+def namespace_ids(markup: str, prefix: str) -> str:
+    for identifier in set(re.findall(r'id="([^"]+)"', markup)):
+        unique = f"{prefix}-{identifier}"
+        markup = markup.replace(f'id="{identifier}"', f'id="{unique}"')
+        markup = markup.replace(f"url(#{identifier})", f"url(#{unique})")
+        markup = markup.replace(f'href="#{identifier}"', f'href="#{unique}"')
+    return markup
+
+
+def inline_icon(markup: str, prefix: str, x: float, y: float) -> str:
+    root = re.search(r"<svg[^>]*>", markup).group()
+    view_box = re.search(r'viewBox="([^"]+)"', root).group(1)
+    root_fill = re.search(r'\sfill="([^"]+)"', root)
+    fill = f' fill="{root_fill.group(1)}"' if root_fill else ""
+    inner = re.sub(r"^.*?<svg[^>]*>", "", markup, count=1, flags=re.S)
+    inner = re.sub(r"</svg>\s*$", "", inner, flags=re.S)
+    inner = re.sub(r"<title>.*?</title>", "", inner, flags=re.S)
+    inner = namespace_ids(inner, prefix)
+    return (
+        f'  <svg x="{x:.1f}" y="{y}" width="{ICON_SIZE}" height="{ICON_SIZE}" '
+        f'viewBox="{view_box}"{fill}>{inner.strip()}</svg>'
+    )
+
+
+def icon_markup(spec: dict, theme_name: str) -> str:
+    if "devicon" in spec:
+        return fetch(DEVICON_URL.format(path=spec["devicon"]))
+    return fetch(SIMPLE_URL.format(slug=spec["simple"], color=spec[theme_name]))
+
+
+def panel(group: dict, theme_name: str, icons: dict) -> str:
     items = group["items"]
     step = group["width"] / len(items)
     parts = [
@@ -115,15 +140,16 @@ def panel(group: dict, theme: dict, paths: dict) -> str:
         f'height="{PANEL_HEIGHT}" rx="12" class="panel" />',
         f'  <text x="{group["x"] + 20}" y="{group["y"] + 30}" class="title">{group["title"]}</text>',
     ]
-    for index, (slug, label, *colors) in enumerate(items):
-        color = colors[theme["color_index"] - 2]
+    for index, (label, _) in enumerate(items):
         center = group["x"] + step * (index + 0.5)
-        icon_x = center - ICON_SIZE / 2
-        icon_y = group["y"] + 52
-        scale = ICON_SIZE / 24
+        slug = re.sub(r"[^a-z0-9]", "", label.lower())
         parts.append(
-            f'  <g transform="translate({icon_x:.1f} {icon_y}) scale({scale:.4f})" class="icon">'
-            f'<path d="{paths[slug]}" fill="{color}" /></g>'
+            inline_icon(
+                icons[theme_name][label],
+                f"{slug}-{group['title'].lower()}",
+                center - ICON_SIZE / 2,
+                group["y"] + 52,
+            )
         )
         parts.append(
             f'  <text x="{center:.1f}" y="{group["y"] + 116}" class="label" '
@@ -132,13 +158,12 @@ def panel(group: dict, theme: dict, paths: dict) -> str:
     return "\n".join(parts)
 
 
-def render(theme_name: str, theme: dict, paths: dict) -> str:
-    body = "\n\n".join(panel(group, theme, paths) for group in GROUPS)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-label="Mobile, frontend, and backend stacks and how they connect">
+def render(theme_name: str, theme: dict, icons: dict) -> str:
+    body = "\n\n".join(panel(group, theme_name, icons) for group in GROUPS)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-label="Mobile and frontend clients calling a Node.js and Express.js backend, backed by Postgres, Supabase, and Firebase">
   <style>
     .title {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: {theme["muted"]}; letter-spacing: 0.16em; }}
     .label {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: {theme["text"]}; }}
-    .note {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 10px; fill: {theme["muted"]}; letter-spacing: 0.08em; }}
     .panel {{ fill: {theme["panel"]}; stroke: {theme["border"]}; stroke-width: 1; }}
     .wire {{ fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 5 9; animation: flow 1.8s linear infinite; }}
     .to-api-mobile {{ stroke: {theme["wire_mobile"]}; }}
@@ -158,11 +183,18 @@ def render(theme_name: str, theme: dict, paths: dict) -> str:
 
 
 def main() -> None:
-    slugs = {slug for group in GROUPS for slug, *_ in group["items"]}
-    paths = {slug: fetch_path(slug) for slug in sorted(slugs)}
-    for name, theme in THEMES.items():
-        target = ROOT / "assets" / f"stack-{name}.svg"
-        target.write_text(render(name, theme, paths))
+    icons = {
+        theme_name: {
+            label: icon_markup(spec, theme_name)
+            for group in GROUPS
+            for label, spec in group["items"]
+        }
+        for theme_name in THEMES
+    }
+
+    for theme_name, theme in THEMES.items():
+        target = ROOT / "assets" / f"stack-{theme_name}.svg"
+        target.write_text(render(theme_name, theme, icons))
         print(f"wrote {target.relative_to(ROOT)}")
 
 
