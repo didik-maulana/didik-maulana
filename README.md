@@ -1,102 +1,169 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:1f2937,100:0d1117&height=150&section=header&text=DIDIK%20MAULANA%20ARDIANSYAH&fontSize=34&fontColor=ffffff&desc=SENIOR%20MOBILE%20ENGINEER%20%C2%B7%20JAKARTA%2C%20INDONESIA&descSize=14&descAlignY=62&fontAlignY=42" width="100%" alt="Didik Maulana Ardiansyah, Senior Mobile Engineer" />
+<h1 align="left" id="didik-title">Hi, I'm Didik 👋</h1>
+<h3 align="left">Software Engineer building mobile and full-stack products. Jakarta, Indonesia.</h3>
+
+<p align="left">
+  <a href="https://didikmaulana.com"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fdidikmaulana.com&label=didikmaulana.com&labelColor=0d1117&color=0175C2&style=flat" /></a>
+  <a href="https://linkedin.com/in/didik-maulana"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-didik--maulana-0A66C2?logo=linkedin&logoColor=white&labelColor=0d1117&style=flat" /></a>
+  <a href="https://medium.com/@didik.ardiansyah"><img alt="Medium" src="https://img.shields.io/badge/Medium-@didik.ardiansyah-7F52FF?logo=medium&logoColor=white&labelColor=0d1117&style=flat" /></a>
+  <a href="https://github.com/didik-maulana?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/didik-maulana?logo=github&logoColor=white&labelColor=0d1117&color=6e7681&style=flat" /></a>
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=didik-maulana&label=views&labelColor=0d1117&color=6e7681&style=flat" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3200&pause=900&color=0175C2&center=true&vCenter=true&width=700&lines=Mobile+is+where+I+go+deep;Full-stack+is+how+I+finish+the+job;iOS+%C2%B7+Flutter+%C2%B7+React+Native+%C2%B7+Node+%C2%B7+Postgres" alt="Mobile is where I go deep, full-stack is how I finish the job" />
-</p>
-
-<p align="center">
-  <a href="https://didikmaulana.com"><img src="https://img.shields.io/badge/Portfolio-0175C2?style=flat-square&logoColor=white&labelColor=0d1117&logo=readdotcv" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/didik-maulana"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn" /></a>
-  <a href="https://medium.com/@didik.ardiansyah"><img src="https://img.shields.io/badge/Medium-7F52FF?style=flat-square&logo=medium&logoColor=white&labelColor=0d1117" alt="Medium" /></a>
-  <a href="mailto:didikmaulana49@gmail.com"><img src="https://img.shields.io/badge/Email-F05138?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email" /></a>
-  <img src="https://komarev.com/ghpvc/?username=didik-maulana&style=flat-square&color=6e7681&label=views&labelColor=0d1117" alt="Profile views" />
-</p>
-
-<table align="center">
-  <tr>
-    <td align="center" width="33%">
-      <strong>7 years</strong><br />
-      <sub>shipping mobile</sub>
-    </td>
-    <td align="center" width="33%">
-      <strong>99%+</strong><br />
-      <sub>crash-free sessions</sub>
-    </td>
-    <td align="center" width="33%">
-      <strong>7M+</strong><br />
-      <sub>monthly users reached</sub>
-    </td>
-  </tr>
-</table>
-
-## What I do
-
-<table>
-  <tr>
-    <td width="25%"><strong>Build</strong></td>
-    <td>Native iOS and Android, Flutter, React Native. Apps that stay fast after launch.</td>
-  </tr>
-  <tr>
-    <td><strong>Fix</strong></td>
-    <td>Slow screens, memory leaks, crashes, monorepos that drifted apart.</td>
-  </tr>
-  <tr>
-    <td><strong>Ship</strong></td>
-    <td>Automated release pipelines, so shipping is boring on purpose.</td>
-  </tr>
-  <tr>
-    <td><strong>Teach</strong></td>
-    <td>Led a 4 engineer team. Reviewed 540+ submissions at Dicoding, 4.9 average.</td>
-  </tr>
-</table>
-
-## Tech Stack
-
-<table>
-  <tr>
-    <td align="right" width="130"><strong>Mobile</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=swift,kotlin,flutter,dart,react&theme=dark" alt="Swift, Kotlin, Flutter, Dart, React Native" /></td>
-  </tr>
-  <tr>
-    <td align="right"><strong>Frontend</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=ts,react,nextjs,astro,vite,tailwind&theme=dark" alt="TypeScript, React, Next.js, Astro, Vite, Tailwind CSS" /></td>
-  </tr>
-  <tr>
-    <td align="right"><strong>Backend</strong></td>
-    <td><img src="https://skillicons.dev/icons?i=nodejs,postgres,supabase,firebase&theme=dark" alt="Node.js, PostgreSQL, Supabase, Firebase" /></td>
-  </tr>
-</table>
-
-## GitHub
-
-<p align="center">
-  <img src="./metrics/overview.svg" width="49%" alt="GitHub overview" />
-  <img src="./metrics/languages.svg" width="49%" alt="Most used languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=didik-maulana&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" width="98%" alt="Contribution streak" />
-</p>
-
-<p align="center">
+<a href="#didik-title">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/didik-maulana/didik-maulana/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/didik-maulana/didik-maulana/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/didik-maulana/didik-maulana/output/github-snake.svg" alt="Contribution snake" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./metrics/overview-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./metrics/overview.svg" />
+    <img src="./metrics/overview.svg" alt="GitHub overview" align="right" width="420" />
   </picture>
+</a>
+
+Mobile is where I go deep. Full-stack is how I finish the job. Seven years across native Android, iOS, Flutter, and React Native, shipping fintech, IoT, and marketplace apps in Indonesia and Singapore.
+
+### More About Me
+
+- 🏗️ &nbsp;Building React Native apps at **[HomePay]**, MAS-regulated renovation escrow in Singapore
+- 🧹 &nbsp;Best at codebases that got messy: two apps **2,300 commits apart**, now one monorepo
+- 📱 &nbsp;Five years native Android and iOS, then **Flutter** and **React Native** since late 2024
+- 👥 &nbsp;Led a **4-engineer iOS team** at Gravel, 100K+ MAU across 26 provinces
+- 🎓 &nbsp;Reviewed **540+ submissions** at Dicoding, mentored **100+ developers**
+- ✍️ &nbsp;I write on **[Medium]** and keep longer work at **[didikmaulana.com]**
+
+<br clear="right" />
+
+<h2 align="left" id="didik-tech">What I Build With</h2>
+
+> The stack I reach for, grouped by where it runs.
+
+**Mobile**
+
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/swift/F05138" width="45" height="45" alt="Swift" /></a>
+      <br>Swift
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/kotlin/7F52FF" width="45" height="45" alt="Kotlin" /></a>
+      <br>Kotlin
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/flutter/02569B/47C5FB" width="45" height="45" alt="Flutter" /></a>
+      <br>Flutter
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/dart/0175C2/40C4FF" width="45" height="45" alt="Dart" /></a>
+      <br>Dart
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/react/61DAFB" width="45" height="45" alt="React Native" /></a>
+      <br>RN
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/expo/000020/FFFFFF" width="45" height="45" alt="Expo" /></a>
+      <br>Expo
+    </td>
+  </tr>
+</table>
+
+**Frontend**
+
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/typescript/3178C6" width="45" height="45" alt="TypeScript" /></a>
+      <br>TypeScript
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/react/61DAFB" width="45" height="45" alt="React" /></a>
+      <br>React
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/nextdotjs/000000/FFFFFF" width="45" height="45" alt="Next.js" /></a>
+      <br>Next.js
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/astro/BC52EE" width="45" height="45" alt="Astro" /></a>
+      <br>Astro
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/vite/646CFF" width="45" height="45" alt="Vite" /></a>
+      <br>Vite
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="45" height="45" alt="Tailwind CSS" /></a>
+      <br>Tailwind
+    </td>
+  </tr>
+</table>
+
+**Backend**
+
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="45" height="45" alt="Node.js" /></a>
+      <br>Node.js
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/postgresql/4169E1" width="45" height="45" alt="PostgreSQL" /></a>
+      <br>Postgres
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/supabase/3FCF8E" width="45" height="45" alt="Supabase" /></a>
+      <br>Supabase
+    </td>
+    <td align="center" width="96">
+      <a href="#didik-tech"><img src="https://cdn.simpleicons.org/firebase/DD2C00/FFCA28" width="45" height="45" alt="Firebase" /></a>
+      <br>Firebase
+    </td>
+  </tr>
+</table>
+
+<h2 align="left">By the Numbers</h2>
+
+<table>
+  <tr>
+    <td align="center" width="33%"><strong>7+ years</strong><br /><sub>shipping mobile</sub></td>
+    <td align="center" width="33%"><strong>99%+</strong><br /><sub>crash-free sessions</sub></td>
+    <td align="center" width="33%"><strong>7M</strong><br /><sub>MAU at peak</sub></td>
+  </tr>
+</table>
+
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./metrics/languages-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./metrics/languages.svg" />
+    <img src="./metrics/languages.svg" alt="Most used languages" width="420" />
+  </picture>
+  <img src="https://streak-stats.demolab.com?user=didik-maulana&hide_border=true&date_format=j%20M%5B%20Y%5D&background=00000000&ring=0175C2&fire=F05138&currStreakLabel=7F52FF" alt="Contribution streak" width="49%" />
 </p>
 
-## Let's talk
+<h2 align="left">Recent Activity</h2>
 
-Open to senior mobile and full-stack roles, remote or Jakarta based.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/didik-maulana/didik-maulana/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/didik-maulana/didik-maulana/output/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/didik-maulana/didik-maulana/output/github-snake.svg" alt="Contribution snake" width="100%" />
+</picture>
 
-<p align="center">
-  <a href="mailto:didikmaulana49@gmail.com"><img src="https://img.shields.io/badge/didikmaulana49@gmail.com-F05138?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email" /></a>
-  <a href="https://didikmaulana.com"><img src="https://img.shields.io/badge/Full%20resume-0175C2?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=0d1117" alt="Resume" /></a>
+<details>
+  <summary>Commits over the last 31 days</summary>
+  <br />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=didik-maulana&theme=github-compact&hide_border=true&area=true" alt="Activity graph" width="100%" />
+</details>
+
+<h2 align="left">Get in Touch</h2>
+
+Open to senior mobile and full-stack roles, remote or Jakarta.
+
+<p align="left">
+  <a href="mailto:didikmaulana49@gmail.com"><img alt="Email" src="https://img.shields.io/badge/didikmaulana49@gmail.com-F05138?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" /></a>
+  <a href="https://didikmaulana.com"><img alt="Resume" src="https://img.shields.io/badge/Full%20resume-0175C2?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=0d1117" /></a>
+  <a href="https://linkedin.com/in/didik-maulana"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" /></a>
 </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0175C2,50:F05138,100:7F52FF&height=6&section=footer" width="100%" alt="" />
-</p>
+<!-- links -->
+
+[HomePay]: https://www.linkedin.com/company/homepaysg "HomePay"
+[Medium]: https://medium.com/@didik.ardiansyah "Medium"
+[didikmaulana.com]: https://didikmaulana.com "Portfolio and resume"
