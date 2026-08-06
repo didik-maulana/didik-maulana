@@ -17,20 +17,20 @@
   </picture>
 </a>
 
-Mobile is where I go deep. Full-stack is how I finish the job. Seven years across native Android, iOS, Flutter, and React Native, shipping fintech, IoT, and marketplace apps in Indonesia and Singapore.
+Mobile is where I go deep. Full-stack is how I finish the job. Seven years across native Android, iOS, Flutter, and React Native, shipping fintech, IoT, and marketplace products in Singapore and Indonesia.
 
-### More About Me
+### About Me
 
-- 🏗️ &nbsp;Building React Native apps at **[HomePay]**, MAS-regulated renovation escrow in Singapore
-- 🧹 &nbsp;Best at codebases that got messy: two apps **2,300 commits apart**, now one monorepo
-- 📱 &nbsp;Five years native Android and iOS, then **Flutter** and **React Native** since late 2024
-- 👥 &nbsp;Led a **4-engineer iOS team** at Gravel, 100K+ MAU across 26 provinces
-- 🎓 &nbsp;Reviewed **540+ submissions** at Dicoding, mentored **100+ developers**
-- ✍️ &nbsp;I write on **[Medium]** and keep longer work at **[didikmaulana.com]**
+- 🏗️ &nbsp;Building React Native apps for MAS-regulated renovation escrow payments at **[HomePay]** Singapore
+- 🧹 &nbsp;Unifying messy codebases, including merging two apps **2,300 commits apart** into one monorepo
+- 📱 &nbsp;Deep mobile engineering backed by full-stack **TypeScript**, **Node.js**, and database delivery
+- 👥 &nbsp;Led a **4-engineer iOS team** at Gravel across 26 provinces for 100K+ MAU
+- 🎓 &nbsp;Reviewed **540+ code submissions** at Dicoding with a 4.9 rating, mentoring **100+ developers**
+- ✍️ &nbsp;Writing on **[Medium]** and publishing technical work at **[didikmaulana.com]**
 
 <br clear="right" />
 
-<h2 align="left" id="didik-tech">What I Build With</h2>
+<h2 align="left" id="didik-tech">Tech Stack</h2>
 
 > The stack I reach for, grouped by where it runs.
 
@@ -123,9 +123,9 @@ Mobile is where I go deep. Full-stack is how I finish the job. Seven years acros
 
 <table>
   <tr>
-    <td align="center" width="33%"><strong>7+ years</strong><br /><sub>shipping mobile</sub></td>
+    <td align="center" width="33%"><strong>7+ years</strong><br /><sub>mobile and full-stack</sub></td>
     <td align="center" width="33%"><strong>99%+</strong><br /><sub>crash-free sessions</sub></td>
-    <td align="center" width="33%"><strong>7M</strong><br /><sub>MAU at peak</sub></td>
+    <td align="center" width="33%"><strong>7M</strong><br /><sub>peak monthly active users</sub></td>
   </tr>
 </table>
 
