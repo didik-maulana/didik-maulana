@@ -9,7 +9,7 @@
 </p>
 
 <p align="left">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3200&pause=900&color=0175C2&width=520&lines=Native+iOS+and+Android;Flutter+and+React+Native;Node.js%2C+Postgres%2C+and+the+rest+of+it" alt="Native iOS and Android, Flutter and React Native, Node.js and Postgres" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3200&pause=900&color=0175C2&width=560&lines=Swift+and+Kotlin%2C+natively;Flutter+and+React+Native%2C+everywhere+else;Node.js+and+Postgres+behind+both" alt="Swift and Kotlin natively, Flutter and React Native everywhere else, Node.js and Postgres behind both" />
 </p>
 
 <h3 align="left">Software Engineer building mobile and full-stack products</h3>
