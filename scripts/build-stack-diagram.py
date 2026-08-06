@@ -46,12 +46,21 @@ GROUPS = [
     {
         "id": "backend",
         "title": "BACKEND",
-        "x": 270,
-        "y": 320,
-        "width": 420,
+        "x": 340,
+        "y": 280,
+        "width": 280,
         "items": [
             ("nodedotjs", "Node.js", "#5FA04E", "#7EE787"),
-            ("express", "Express", "#000000", "#FFFFFF"),
+            ("express", "Express.js", "#000000", "#FFFFFF"),
+        ],
+    },
+    {
+        "id": "database",
+        "title": "DATABASE",
+        "x": 270,
+        "y": 470,
+        "width": 420,
+        "items": [
             ("postgresql", "Postgres", "#4169E1", "#79C0FF"),
             ("supabase", "Supabase", "#3FCF8E", "#3FCF8E"),
             ("firebase", "Firebase", "#DD2C00", "#FFCA28"),
@@ -67,7 +76,7 @@ THEMES = {
         "border": "#d1d9e0",
         "wire_mobile": "#F05138",
         "wire_frontend": "#3178C6",
-        "wire_shared": "#59636e",
+        "wire_data": "#4169E1",
         "color_index": 2,
     },
     "dark": {
@@ -77,7 +86,7 @@ THEMES = {
         "border": "#30363d",
         "wire_mobile": "#F05138",
         "wire_frontend": "#58A6FF",
-        "wire_shared": "#8b949e",
+        "wire_data": "#79C0FF",
         "color_index": 3,
     },
 }
@@ -124,9 +133,8 @@ def panel(group: dict, theme: dict, paths: dict) -> str:
 
 
 def render(theme_name: str, theme: dict, paths: dict) -> str:
-    mobile, frontend, backend = GROUPS
     body = "\n\n".join(panel(group, theme, paths) for group in GROUPS)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-label="Mobile, frontend, and backend stacks and how they connect">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-label="Mobile, frontend, and backend stacks and how they connect">
   <style>
     .title {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: {theme["muted"]}; letter-spacing: 0.16em; }}
     .label {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: {theme["text"]}; }}
@@ -135,18 +143,16 @@ def render(theme_name: str, theme: dict, paths: dict) -> str:
     .wire {{ fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 5 9; animation: flow 1.8s linear infinite; }}
     .to-api-mobile {{ stroke: {theme["wire_mobile"]}; }}
     .to-api-frontend {{ stroke: {theme["wire_frontend"]}; animation-delay: 0.6s; }}
-    .shared {{ stroke: {theme["wire_shared"]}; animation-delay: 0.3s; }}
+    .to-data {{ stroke: {theme["wire_data"]}; animation-delay: 1.2s; }}
     @keyframes flow {{ to {{ stroke-dashoffset: -28; }} }}
   </style>
 
 {body}
 
-  <path d="M470 115 L510 115" class="wire shared" />
+  <path d="M250 190 C250 244, 400 226, 420 280" class="wire to-api-mobile" />
+  <path d="M720 190 C720 244, 560 226, 540 280" class="wire to-api-frontend" />
 
-  <path d="M250 190 C250 262, 360 258, 380 320" class="wire to-api-mobile" />
-  <path d="M720 190 C720 262, 600 258, 580 320" class="wire to-api-frontend" />
-
-  <text x="480" y="268" class="note" text-anchor="middle">ONE API, EVERY CLIENT</text>
+  <path d="M480 430 L480 470" class="wire to-data" />
 </svg>
 '''
 

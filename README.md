@@ -42,7 +42,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
-    <img src="./assets/stack-light.svg" alt="Mobile, frontend, and backend stacks and how they connect" width="100%" />
+    <img src="./assets/stack-light.svg" alt="Mobile and frontend clients calling a Node.js and Express.js backend, backed by Postgres, Supabase, and Firebase" width="100%" />
   </picture>
 </p>
 
