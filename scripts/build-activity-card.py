@@ -131,6 +131,7 @@ def render(theme_name: str, theme: dict, calendar: dict) -> str:
     peak = max(total for _, total in weeks) or 1
     slot = CHART_WIDTH / len(weeks)
     bar_width = max(4.0, slot - 5)
+    slot = (CHART_WIDTH - bar_width) / (len(weeks) - 1)
 
     bars = []
     ticks = []
@@ -173,7 +174,6 @@ def render(theme_name: str, theme: dict, calendar: dict) -> str:
 
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="12" fill="{theme["panel"]}" stroke="{theme["border"]}" />
   <text x="40" y="40" class="title">LAST 12 MONTHS</text>
-  <line x1="40" y1="56" x2="{WIDTH - 40}" y2="56" stroke="{theme["border"]}" />
   <line x1="{CHART_X}" y1="{BAR_BASE + 0.5}" x2="{CHART_X + CHART_WIDTH}" y2="{BAR_BASE + 0.5}" stroke="{theme["border"]}" />
 
 {stats}
