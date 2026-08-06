@@ -74,7 +74,7 @@
 
 <h2 align="center">Get in Touch</h2>
 
-<p align="center">Open to senior mobile and full-stack roles, remote or Jakarta based.</p>
+<p align="center">Open to senior mobile and full-stack engineering roles. Reach out if you need someone to ship reliable apps and the full-stack systems behind them.</p>
 
 <p align="center">
   <a href="mailto:didikmaulana49@gmail.com">
