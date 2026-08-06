@@ -14,21 +14,11 @@
 
 <h3 align="left">Software Engineer building mobile and full-stack products</h3>
 
-<a href="#didik-title">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./metrics/overview-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./metrics/overview.svg" />
-    <img src="./metrics/overview.svg" alt="GitHub overview" align="right" width="420" />
-  </picture>
-</a>
-
 ### About Me
 
 - 🏗️ &nbsp;Building React Native apps for MAS-regulated renovation escrow payments at **[HomePay]** Singapore
 - 📱 &nbsp;Deep mobile engineering backed by full-stack **TypeScript**, **Node.js**, and database delivery
 - ✍️ &nbsp;Writing on **[Medium]** and publishing technical work at **[didikmaulana.com]**
-
-<br clear="right" />
 
 <h2 align="center" id="didik-tech">Tech Stack</h2>
 

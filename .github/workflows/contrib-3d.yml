@@ -21,8 +21,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Remove the language ring
-        run: python3 scripts/strip-language-ring.py
+      - name: Polish the calendar
+        run: python3 scripts/polish-3d-calendar.py
 
       - name: Build the activity card
         run: python3 scripts/build-activity-card.py
